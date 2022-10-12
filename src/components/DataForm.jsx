@@ -6,7 +6,7 @@ const DataForm = () => {
     const { register, handleSubmit, formState: { errors }} = useForm();
     const procesarFormulario = (data,e) => {
         e.preventDefault();
-             console.log(data);
+       //      console.log(data);
         
         getLocation(data);
     }
@@ -21,7 +21,7 @@ const DataForm = () => {
                  const date= await response.json();
                  
                  
-                 console.long(date);
+                 console.log(date);
 
                } catch {
                 throw new Error('could not data climate');
